@@ -158,6 +158,8 @@ body{
 
     #todo-text{
         margin-bottom: 0.5rem;
+    }
+    .todo-item{
         white-space: nowrap;
     }
 }
