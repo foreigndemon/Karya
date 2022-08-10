@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    position: relative;
+    font-family: 'Spline Sans Mono', monospace;
+    background-color: #F9F9F9;
+    opacity: 0.8;
+    background-image: radial-gradient(#576F72 1.3px, #e9e7e7 1.3px);
+    background-size: 26px 26px;
+}
+
+.container{
+    position: relative;
+    background-color:#f9f9f9b9;
+    width: 35%;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin: 10rem auto;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    border: 1px solid rgba(83, 63, 63, 0.21);
+    box-shadow: 
+        0 10px 15px 0 rgba(0,0,0,0.2);
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.add-todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.todo-items{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.todo-item{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    font-weight: 600;
+    list-style-type: none;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 1.5rem;
+    /* margin-bottom: 50px; */
+}
+
+
+.todo-item-check{
+    margin-right:1rem ;
+    accent-color: #7DCE13;
+    padding: 0.5rem;
+    height: 20px;
+    width: 30px;
+}
+
+.check-text{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.karya{
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-bottom: 0.5rem;
+}
+
+#todo-text{
+    background-color: #292d32;
+    border: 2px solid #1d1f23;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    /* outline: none; */
+    border-radius: 5px;
+    color: #eee;
+    outline: rgb(142, 86, 253);
+}
+
+.submit-btn{
+    background-color: rgb(142, 86, 253);
+    border: none;
+    /* display: inline-block; */
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.submit-btn:hover{
+    background-color: rgb(128, 75, 233);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+.date{
+    margin-bottom: 1rem;
+    font-weight: 900;
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 0.2rem 0.5rem;
+    font-size: 2rem;
+    color: #1d1f23;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.del-btn{
+    background-color: rgb(248, 78, 78);
+    border: none;
+    /* display: inline-block; */
+    padding: 0.5rem 0.7rem;
+    border-radius: 100%;
+    color: #eee;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.del-btn:hover{
+    background-color: rgb(226, 72, 72);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.head-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:1879px){
+    .todo-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-btn{
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:1392px){
+    .container{
+        height: 70%;
+    }
+    .todo-item{
+        white-space: nowrap;
+    }
+}
