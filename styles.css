@@ -150,22 +150,32 @@ body{
     align-items: center;
 }
 
-@media only screen and (max-width:1879px){
-    .todo-form{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .submit-btn{
-        margin-top: 0.5rem;
-    }
-}
-
-@media only screen and (max-width:1392px){
+@media (max-width:600px){
     .container{
-        height: 70%;
+        width: 95%;
     }
-    .todo-item{
-        white-space: nowrap;
+
+    #todo-text{
+        margin-bottom: 0.5rem;
     }
 }
+
+@media (min-width:601px){
+    .container{
+        width: 60%;
+    }
+    #todo-text{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width:1000px){
+    .container{
+        width: 40%;
+    }
+}
+
+
+
+
